@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Cutesy Bakery Chatbot</title>
+  </head>
+  <body>
+    <div class="chatbox-container">
+      <div class="chatbox-messages">
+      </div>
+      <div class="chatbox-input-container">
+        <input class="chatbox-input" type="text" placeholder="Type your message here...">
+        <button class="chatbox-send" onclick="sendMessage">Send</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
